@@ -48,6 +48,7 @@
           border-radius: 5px;
           padding: 10px;
           font-size: 14px;
+          background: var(--input-background);
 
           &:not(:last-child) {
             margin-bottom: 5px;

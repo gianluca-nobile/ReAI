@@ -8,6 +8,7 @@ import {Component, EventEmitter, Output} from '@angular/core';
 export class Step1Component {
 
   @Output() nextStep = new EventEmitter<void>();
+  configuration: {description: string, stack: string, file: File[]} = {} as any;
 
   clickNext() {
     this.nextStep.emit();

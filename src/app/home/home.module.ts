@@ -9,6 +9,7 @@ import { Step2Component } from './step-2/step-2.component';
 import { Step3Component } from './step-3/step-3.component';
 import { LoaderComponent } from './step-2/loader/loader.component';
 import { RefactorResultsComponent } from './step-3/refactor-results/refactor-results.component';
+import {FormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { RefactorResultsComponent } from './step-3/refactor-results/refactor-res
   ],
   imports: [
     CommonModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    FormsModule
   ]
 })
 export class HomeModule { }
