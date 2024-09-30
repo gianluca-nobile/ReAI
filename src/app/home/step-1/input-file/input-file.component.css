@@ -10,10 +10,12 @@
     padding: 20px;
     display: grid;
     place-items: center;
-    border: 2px dashed var(--text-color2);
+    border: 2px dashed var(--input-border);
     border-radius: 5px;
     margin-bottom: 5px;
+    margin-top: 1rem;
     cursor: pointer;
+    background: var(--input-background);
 
     h4 {
       margin: 0;

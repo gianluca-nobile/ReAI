@@ -1,0 +1,22 @@
+<div class="d-flex justify-content-center align-items-center">
+  <div class="folder">
+    <span class="folder-tab"></span>
+    <div class="folder-icn">
+      <ng-container *ngIf="loadingDownload">
+        <div class="downloading">
+          <span class="custom-arrow"></span>
+        </div>
+        <div class="bar"></div>
+      </ng-container>
+    </div>
+  </div>
+  <div class="text-start ms-3" *ngIf="!loadingDownload">
+    <div class="folder-name fw-bold text-truncate">Refactor Results</div>
+    <div class="folder-size">1.2 MB</div>
+  </div>
+</div>
+<ng-container *ngIf="!loadingDownload" >
+  <div class="d-flex justify-content-center mt-5">
+    <button (click)="startDownload()" class="btn btn-primary"><i class="fa-solid fa-download me-2"></i>Download</button>
+  </div>
+</ng-container>

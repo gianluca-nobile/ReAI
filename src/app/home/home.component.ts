@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  step = 1;
+
+  constructor() { }
+
+  nextStep() {
+    this.step++;
+  }
+
 }
