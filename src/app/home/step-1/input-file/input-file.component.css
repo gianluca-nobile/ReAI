@@ -44,7 +44,7 @@
           display: flex;
           justify-content: space-between;
           align-items: center;
-          border: 1px solid var(--text-color2);
+          border: 1px solid var(--input-border);
           border-radius: 5px;
           padding: 10px;
           font-size: 14px;

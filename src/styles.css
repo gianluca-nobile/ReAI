@@ -5,14 +5,15 @@
   --primary-color: #29C3B0;
   --secondary-color: #2196f3;
   --background-color: #081626;
-  --footer-bg: #040910;
+  --header-background: #00010269;
+  --footer-background: #040910;
   --text-color1: #ffffff;
   --text-color2: #BFBFBFFF;
   --text-color-muted: #a3a3a3;
-  --card-bg: #00010269;
+  --card-background: #00010269;
   --card-border: #000102;
-  --input-border: #a3a3a3;
-  --input-background: #04060d;
+  --input-border: transparent;
+  --input-background: #040910;
 }
 
 body {
@@ -36,7 +37,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  opacity: 0.8; /* Opacità dell'immagine */
+  opacity: 0.9; /* Opacità dell'immagine */
   z-index: -1; /* Mette l'immagine dietro al contenuto */
 }
 .container-app {
@@ -45,7 +46,7 @@ body {
 
 /* card */
 .card {
-  background-color: var(--card-bg);
+  background-color: var(--card-background);
   border: 1px solid var(--card-border);
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -83,4 +84,15 @@ body {
   transform: scale(1.1);
   background-color: var(--primary-color);
   border: 1px solid var(--primary-color);
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  color: var(--text-color1);
+}
+.btn-secondary:hover {
+  transform: scale(1.1);
+  background-color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
 }

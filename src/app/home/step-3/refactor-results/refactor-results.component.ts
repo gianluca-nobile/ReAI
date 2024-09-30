@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-refactor-results',
@@ -7,14 +7,6 @@ import { Component } from '@angular/core';
 })
 export class RefactorResultsComponent {
 
-  loadingDownload: boolean = false;
-
-
-  startDownload() {
-    this.loadingDownload = true;
-    setTimeout(() => {
-      this.loadingDownload = false;
-    }, 3000);
-  }
+  @Input() loadingDownload: boolean = false;
 
 }

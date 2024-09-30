@@ -15,4 +15,8 @@ export class HomeComponent {
     this.step++;
   }
 
+  restart() {
+    this.step = 1;
+  }
+
 }

@@ -17,8 +17,10 @@
     <div class="mb-3">
       <app-input-file (emitFile)="configuration.file = $event"></app-input-file>
     </div>
-    <div *ngIf="configuration.stack && configuration.file?.length" class="d-flex justify-content-center mt-5">
+  </div>
+  <div class="card-footer d-flex justify-content-center">
+    <ng-container *ngIf="configuration.stack && configuration.file?.length">
       <button (click)="clickNext()" class="btn btn-primary"><i class="fa-solid fa-rocket me-2"></i>Do refactor</button>
-    </div>
+    </ng-container>
   </div>
 </div>

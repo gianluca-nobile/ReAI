@@ -6,6 +6,6 @@
     <app-step-2 (nextStep)="nextStep()"></app-step-2>
   </ng-container>
   <ng-container *ngIf="step === 3">
-    <app-step-3></app-step-3>
+    <app-step-3 (restart)="restart()"></app-step-3>
   </ng-container>
 </div>
